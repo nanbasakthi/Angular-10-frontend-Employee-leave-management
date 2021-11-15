@@ -1,0 +1,28 @@
+<div class="col-md-6 offset-md-3"> 
+    <h3> Update Employee Leave</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" class="form-control" id="fullname" [(ngModel)]="employee.fullname" name="fullname">
+        </div>
+        <div class="form-group">
+            <label>Leave Date</label>
+            <input type="date" class="form-control" id="leavedate" [(ngModel)]="employee.leavedate" name="leavedate">
+        </div>
+        <div class="form-group">
+            <label>Leave Type</label>
+            <select type="text" class="form-control" id="leavetype" [(ngModel)]="employee.leavetype" name="leavetype">
+                <option value="Personal Leave">Personal Leave</option>
+                <option value="Floating Day">Floating Day</option>
+                <option value="Combo off">Combo Off</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Reason for Leave</label>
+            <input type="text" class="form-control" id="reason" [(ngModel)]="employee.reason" name="reason">
+        </div>
+    
+        <button class="btn btn-success" type="submit">Submit</button>
+    
+    </form>
+    </div>
